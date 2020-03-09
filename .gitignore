@@ -1,0 +1,5 @@
+# Virtual env:
+*venv*
+
+# Mac secfic:
+*.DS_Store

@@ -34,7 +34,7 @@ class Post(object):
         # pymongo library converts python dictionaries to json
         return {
             'id': self.id,
-            'blog_id': self.id,
+            'blog_id': self.blog_id,
             'author': self.author,
             'content': self.content,
             'title': self.title,

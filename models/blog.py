@@ -5,6 +5,7 @@ from models.post import Post
 
 __author__ = "laurenbanawa"
 
+
 class Blog(object):
     def __init__(self, author, title, description, id=None):
         self.author = author

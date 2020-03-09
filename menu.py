@@ -1,7 +1,7 @@
-__author__ = 'laurenbanawa'
-
 from database import Database
 from models.blog import Blog
+
+__author__ = 'laurenbanawa'
 
 
 class Menu(object):
@@ -62,7 +62,7 @@ class Menu(object):
     def _view_blog(self):
         blog_to_see = input('Enter the ID of the blog you would like to read: ')
         blog = Blog.from_mongo(blog_to_see)
-        posts = Blog.get_posts(self)
+        posts = blog.get_posts()
         for post in posts:
             print('Date: {}, title: {}\n\n{}'.format(post['created_date'], post['title'], post['content']))
 
